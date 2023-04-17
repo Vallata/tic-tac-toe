@@ -1,0 +1,50 @@
+.ties-win {
+  background-color: #BBAC9F;
+}
+
+.ties-win-title {
+  color: #EEE3DA;
+}
+
+.ties-win-number, .title, .result {
+  color: #766C65;
+}
+
+.btn-orange {
+  background-color: #D9B405;
+  border: none;
+}
+
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.player_indicator {
+  text-align: center;
+  margin-top: 20px;
+  color: cadetblue;
+}
+
+.board {
+  display: grid;
+  position: relative;
+  z-index: 99;
+  grid-template-rows: 150px 150px 150px;
+  grid-template-columns: 150px 150px 150px;
+  height: 500px;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  transition: z-index 1s ease, height 1s ease;
+}
+
+.board_tile {
+  border: 10px solid #BBAC9F;
+  background: #e7dbd1;
+  padding: 20px;
+  text-align: center;
+  align-content: center;
+  color: white;
+  font-size: 0;
+}
