@@ -5,8 +5,9 @@ class GamesController < ApplicationController
   end
 
   def create
+    @user = User.find(params[:user_id])
     @game = Game.new(game_params)
-    @game.user = current_user
+    @game.user = @user
     if @game.save
       redirect_to new_game_path
     else
