@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   # root to: "pages#home"
 
   root to: "pages#home"
-  resources :games, only: %i[index new create]
+  resources :games, only: %i[index new create update]
 end
